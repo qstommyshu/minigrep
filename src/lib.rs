@@ -43,6 +43,7 @@ impl Config {
 //         Ok(Config {query, file_path, ignore_case,})
 //     }
 // }
+
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(config.file_path)?;
 
